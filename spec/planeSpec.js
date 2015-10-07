@@ -5,7 +5,7 @@ describe("Plane", function() {
     plane = new Plane();
   });
 
-  it("is in-flight when created", function() {
+  it("is in-flight when created (for some bizarre reason)", function() {
     expect(plane.isAirborne).toEqual(true);
   });
 
