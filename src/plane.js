@@ -1,15 +1,17 @@
 "use strict";
 
 function Plane() {
-  this.isAirborne = true;
+  this.isInFlight = true;
 }
 
 Plane.prototype.land = function() {
-  this.isAirborne = false;
+  this.isInFlight = false;
 };
 
 Plane.prototype.takeOff = function() {
-  this.isAirborne = true;
+  this.isInFlight = true;
 };
 
-
+Plane.prototype.isAirborne = function () {
+  return this.isInFlight;
+};
